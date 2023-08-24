@@ -30,3 +30,7 @@ label {
     font-weight: 200;
     font-family: "Nunito", sans-serif;
 }
+
+.score, .score-note {
+    font-size: calc(0.9em + 1.2vw);
+}
