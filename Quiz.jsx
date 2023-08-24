@@ -12,7 +12,7 @@ export default function Quiz({question, options, userAnswer, handleEventAnswerCh
                     <div className="input--field">
                         {options.map(option => {
                             return (
-                                <div>
+                                <div className="border rounded shadow">
                                     <input
                                     type="radio"
                                     name="question"
