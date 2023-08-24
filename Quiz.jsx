@@ -5,21 +5,21 @@ export default function Quiz({question, options, userAnswer, handleEventAnswerCh
         <div>
             <div className="container shadow-lg p-5 form--field">
                 <div className="container title">
-                    <p className="fw-bold">Multi-Choice - Select an option from the list of options</p> <hr />
+                    <h2 className="fw-bold">Question</h2> <hr />
                 </div>
                 <form onSubmit={handleEventSubmit}>
                     <p className="fw-semibold">{question}</p>
                     <div className="input--field">
                         {options.map(option => {
                             return (
-                                <div className="border rounded shadow">
+                                <div className="border rounded me-2 mb-3 ps-3 py-3">
                                     <input
                                     type="radio"
                                     name="question"
                                     value={option}
                                     checked={userAnswer === option}
                                     onChange={handleEventAnswerChange}
-                                    className="me-2 mb-3"
+                                    className="me-2"
                                     />
                                     <label>{option}</label>
                                 </div>
